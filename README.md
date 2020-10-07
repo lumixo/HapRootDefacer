@@ -1,12 +1,9 @@
-# ADXdefacer
+# haproot defacer
 
-**What is ADXdeface tools?**<br>
-AOXdeface is a tool for defacing dozens or hundreds of sites at once,depending on the number
-of sites that have been determined by you, this is not dangerous, and this is only the file upload method<br>
+**qu'est-ce que cette outils ?**<br>
+Et ben ceci vous permet de changer la page d'un site web a votre guise !
 
-![logo](image.jpg)
-
-**how to install and usage:**
+**comment l'installer et l'utiliser:**
 
 **Termux:**
 
@@ -22,4 +19,4 @@ of sites that have been determined by you, this is not dangerous, and this is on
 
 * `python2 adx.py`
 
-# Thanks For Using Our Script !
+# merci d'avoir utilisée notre script !
